@@ -103,8 +103,9 @@ const ViewDetailsPage = async ({ params }: IbookDetails) => {
 
 
 
-                    {/* //props */}
-                    <Purchasebutton />
+                     {/* //props */}
+                    <Purchasebutton 
+                    books={books} />
                 </div>
 
             </div>

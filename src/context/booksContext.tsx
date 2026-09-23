@@ -1,7 +1,7 @@
 "use client"
 import { createContext, useState } from 'react'
 
-const bookContext = createContext({});
+export const bookContext = createContext({});
 
 
 const BooksProvider = ({children}: Readonly<{
