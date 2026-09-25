@@ -74,8 +74,8 @@ const Listedpage = () => {
 
                 {/* readbooks */}
                 <div className="tab-content border-base-300 bg-base-100 p-10">
-                    {readBooks.length > 0 ? (
-                        readBooks.map((book: BooksCard) => (
+                    {sortedReadBooks.length > 0 ? (
+                        sortedReadBooks.map((book: BooksCard) => (
                             <div
                                 key={book.bookId}
                                 className="container mx-auto px-4 py-12"
@@ -197,8 +197,8 @@ const Listedpage = () => {
                 <div className="tab-content border-base-300 bg-base-100 p-10">
                     {/* wishList data */}
 
-                    {wishList.length > 0 ? (
-                        wishList.map((book: BooksCard) => (
+                    {sortedwishllist.length > 0 ? (
+                        sortedwishllist.map((book: BooksCard) => (
                             <div
                                 key={book.bookId}
                                 className="container mx-auto px-4 py-12"
