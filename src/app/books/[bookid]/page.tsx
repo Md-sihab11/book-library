@@ -29,12 +29,11 @@ const getBooks = async () => {
         const res = await fetch(`${baseUrl}/booksData.json`);
         const data = await res.json()
         return data
-    }catch(error)
-    {
-        console.error("There is a problem:" ,error)
+    } catch (error) {
+        console.error("There is a problem:", error)
         return []
     }
-   
+
 }
 
 
