@@ -4,7 +4,7 @@
 Book Vibe is a modern web application designed for book lovers. It allows users to browse a collection of books, track their reading progress, and manage their reading lists. Users can add books to their "Read" list or "Wishlist" and visualize their reading habits with interactive charts. The application is built using Next.js and React, offering a fast and seamless user experience.
 
 ## 🔗 Live Link
-[View the Live Project Here](#) *(Replace `#` with your actual live link)*
+[Book Vibe _click_here](https://shelfspaceee.netlify.app/)
 
 ## 📸 Screenshot
 
