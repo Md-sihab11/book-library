@@ -4,6 +4,7 @@
 import { bookContext } from "@/context/booksContext";
 import { useContext } from "react";
 import Image from 'next/image'
+import { useState } from 'react'
 
 
 interface BooksCard {
@@ -32,6 +33,23 @@ const Listedpage = () => {
     const { readBooks, wishList } = useContext(bookContext)
     console.log(readBooks, wishList, "ReadBooks", "WishList")
 
+    const [sortBy, setSortBy] = useState<"rating" | "pages" | "year">("rating")
+    console.log("SortBy: ", sortBy)
+
+    const sortBooks = (books: BooksCard[]) => {
+        const sortedBooks = [...books]
+        if (sortBy === "rating")
+            sortedBooks.sort((a, b) => b.rating - a.rating)
+        else if(sortBy === "pages")
+            sortedBooks.sort((a, b) => a.totalPages - b.totalPages)
+        else if(sortBy === "year")
+             sortedBooks.sort((a, b) => a.yearOfPublishing - b.yearOfPublishing)
+    
+        return sortedBooks;
+    };
+    const sortedReadBooks = sortBooks(readBooks)
+    const sortedwishllist = sortBooks(wishList)
+
     return (
         <section className="">
             {/* <h2>ListedPage this is!</h2>
@@ -39,9 +57,20 @@ const Listedpage = () => {
             <div className="container mx-auto text-center p-5 bg-gray-300 my-4 rounded-2xl">
                 Books
             </div>
+            <div className="text-center">
+                <select
+                    value={sortBy}
+                    onChange={(e) => setSortBy(e.target.value as "rating" | "pages" | "year")}
+                    defaultValue="Pick a Runtime" className="select select-success items-center">
+                    <option disabled={true}>Sort By</option>
+                    <option value="rating">Rating</option>
+                    <option value="pages">Number of Pages</option>
+                    <option value="year">Publisher year</option>
+                </select>
+            </div>
             {/* name of each tab group should be unique */}
             <div className="container mx-auto tabs tabs-border">
-                <input type="radio" name="my_tabs_2" className="tab" aria-label="Read Books" />
+                <input type="radio" name="my_tabs_2" className="tab" aria-label={`Read Books (${readBooks.length})`} />
 
                 {/* readbooks */}
                 <div className="tab-content border-base-300 bg-base-100 p-10">
@@ -164,7 +193,7 @@ const Listedpage = () => {
                     )}
                 </div>
 
-                <input type="radio" name="my_tabs_2" className="tab" aria-label="WishList Books" defaultChecked />
+                <input type="radio" name="my_tabs_2" className="tab" aria-label={`WishList Books (${wishList.length})`} defaultChecked />
                 <div className="tab-content border-base-300 bg-base-100 p-10">
                     {/* wishList data */}
 
