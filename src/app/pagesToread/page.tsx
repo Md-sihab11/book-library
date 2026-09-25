@@ -1,4 +1,3 @@
-import React from 'react';
 import ReadBooks from '../read-books/page';
 
 const ToReadPage = () => {

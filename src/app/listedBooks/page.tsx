@@ -1,6 +1,4 @@
-// import Image from 'next/image'
 "use client"
-// import Pagebooks from "@/components/homepage/books";
 import { bookContext } from "@/context/booksContext";
 import { useContext } from "react";
 import Image from 'next/image'
@@ -23,12 +21,7 @@ interface BooksCard {
 
 const Listedpage = () => {
 
-    // const {readBooks}= useContext(bookContext)
-    // console.log(readBooks)
 
-
-    // const {wishList}= useContext(bookContext)
-    // console.log(wishList)
 
     const { readBooks, wishList } = useContext(bookContext)
     console.log(readBooks, wishList, "ReadBooks", "WishList")

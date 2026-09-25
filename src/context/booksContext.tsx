@@ -1,7 +1,8 @@
 "use client"
 import { createContext, useState } from 'react'
 
-export const bookContext = createContext({});
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+export const bookContext = createContext<any>(null);
 
 
 const BooksProvider = ({children}: Readonly<{

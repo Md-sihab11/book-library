@@ -8,8 +8,8 @@ Book Vibe is a modern web application designed for book lovers. It allows users 
 
 ## 📸 Screenshot
 
-![Book Vibe Screenshot of workplace](../my-app/src/assets/tibe.png)
-![Book Vibe Screenshot](../my-app/src/assets/vibe.png)
+![Book Vibe Screenshot of workplace](./src/assets/tibe.png)
+![Book Vibe Screenshot](./src/assets/vibe.png)
 
 ## 🚀 Main Features
 - **Book Catalog:** Browse a diverse collection of books with detailed information.
