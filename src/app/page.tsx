@@ -10,7 +10,6 @@ export default function Home() {
      
       <Banner />
       <Pagebooks />
-      <h2>Footer</h2>
     </div>
   );
 }

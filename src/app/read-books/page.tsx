@@ -22,8 +22,16 @@ const colors = [
     "black",
 ];
 
-const TriangleBar = (props: any) => {
-    const { x, y, width, height, index } = props;
+interface TriangleBarProps {
+    x?: number;
+    y?: number;
+    width?: number;
+    height?: number;
+    index?: number;
+}
+
+const TriangleBar = (props: TriangleBarProps) => {
+    const { x = 0, y = 0, width = 0, height = 0, index = 0 } = props;
 
     const color = colors[index % colors.length];
 
