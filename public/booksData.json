@@ -117,16 +117,16 @@
     "yearOfPublishing": 2011
   },
   {
-    "bookId": 10,
-    "bookName": "Harry Potter and the Sorcerer's Stone",
-    "author": "J.K. Rowling",
-    "image": "https://images.unsplash.com/photo-1618666012174-8b8437f1b74a?q=80&w=800&auto=format&fit=crop",
-    "review": "Harry Potter has never even heard of Hogwarts when the letters start dropping on the doormat at number four, Privet Drive. Framed in-universe and loved globally, the magical journey begins here.",
-    "totalPages": 309,
-    "rating": 4.9,
-    "category": "Fantasy",
-    "tags": ["magic", "wizard", "bestseller"],
-    "publisher": "Scholastic",
-    "yearOfPublishing": 1997
-  }
+  "bookId": 10,
+  "bookName": "Harry Potter and the Sorcerer's Stone",
+  "author": "J.K. Rowling",
+  "image": "https://images.unsplash.com/photo-1629992101753-56d196c8aabb?q=80&w=800&auto=format&fit=crop",
+  "review": "Harry Potter has never even heard of Hogwarts when the letters start dropping on the doormat at number four, Privet Drive. Framed in-universe and loved globally, the magical journey begins here.",
+  "totalPages": 309,
+  "rating": 4.9,
+  "category": "Fantasy",
+  "tags": ["magic", "wizard", "bestseller"],
+  "publisher": "Scholastic",
+  "yearOfPublishing": 1997
+}
 ]
